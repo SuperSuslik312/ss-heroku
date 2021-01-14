@@ -8,7 +8,7 @@ ADD sh-wrapper.sh /bin/sh-wrapper.sh
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
-    && apt install -y wget unzip qrencode curl bash openssh python3\
+    && apt install -y wget unzip qrencode curl bash openssh-server python3\
     && apt install -y shadowsocks-libev\
     && apt autoremove -y\
     && chmod +x /entrypoint.sh\
